@@ -1,0 +1,9 @@
+.manrope {
+  font-family: "Manrope", sans-serif;
+}
+.bg{
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+        </script>
+</head>
+<body class="manrope">
+    <header class="bg-gradient-to-r from-gray-100 to-gray-100 p-5">
+        <!-- navbar -->
+         <nav>
+            <div class="navbar">
+                <div class="navbar-start">
+                   <!-- <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact us</a></li>
+                    </ul>
+                  </div> -->
+                  <div class="border-4 border-[#ABEF5F] bg-[#ABEF5F] rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></svg></div>                  
+                  <h2 class="font-bold text-2xl text-black ml-2">Rinterio</h2>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-semibold text-black">Home</a></li>
+                    <li><a class="font-semibold text-gray-600">Services</a></li>
+                    <li><a class="font-semibold text-gray-600">Portfolio</a></li>
+                    <li><a class="font-semibold text-gray-600">Blogs</a></li>
+                    <li><a class="font-semibold text-gray-600">Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-2">
+                   <div class="bg-white border-2 border-white rounded-full p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg></div> 
+
+                    <div class="bg-white border-2 border-white rounded-full p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/></svg></div>                   
+                  <a class="btn bg-[#ABEF5F] px-4 rounded-3xl text-black font-bold">Book Consult
+                    <div class="border-4 border-black bg-black text-white rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-3"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></svg></div></a>
+                </div>
+
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a class="font-semibold text-black">Home</a></li>
+                      <li><a class="font-semibold text-gray-600">Services</a></li>
+                      <li><a class="font-semibold text-gray-600">Portfolio</a></li>
+                      <li><a class="font-semibold text-gray-600">Blogs</a></li>
+                      <li><a class="font-semibold text-gray-600">Contact us</a></li>
+                    </ul>
+                  </div>
+
+              </div>
+         </nav>
+
+         <!-- banner -->
+          <!-- <section class="">
+            <div class="lg:ml-96 md:w-full md:items-center md:justify-center mb-6"><img src="assets/banner.png" alt="" height="450px" width="350px"></div>
+            <h1 class="text-4xl font-extrabold text-black text-center mb-5">A barn house of this design has a <br>striking appearance</h1>
+            <p class="text-sm font-medium text-gray-500 text-center">Building is sorted by broad category:residential buildings, commercial buildings, industrial <br>buildings, and infrastructural buildings.</p>
+          </section> -->
+          <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <img src="assets/banner.png" alt="" height="450px" width="390px">
+                <h1 class="text-3xl font-extrabold text-black">A barn house of this design has a striking appearance</h1>
+                <p class="py-5 text-sm font-medium text-gray-500 text-center">
+                    Building is sorted by broad category:residential buildings, commercial buildings.
+                </p>
+                <button class="btn bg-[#c8f09a] rounded-3xl text-black font-bold md:w-full sm:w-full lg:w-2/6">View Details 
+                  <div class="bg-[#a8f452] border-4 border-[#a8f452] rounded-full text-black"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg></div>                     
+                </button>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+        <!-- We design thoughtful, liveable spaces -->
+        <!-- <div class="hero bg-base-200 min-h-screen"> -->
+          <section><div class="bg-slate-200 min-h-screen">
+            <div class="relative ml-40 -mb-12">
+              <img src="assets/Vector.png" alt="" height="90px" width="90px" >
+            </div>
+            <br>
+           <div class=" relative">
+            <button class="flex items-center gap-1 bg-white p-2 w-28 rounded-lg ml-48 mt-10 absolute">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>            
+            About us</button></div>
+            <div class="hero min-h-screen">
+              <div class="hero-content flex-col lg:flex-row-reverse gap-14 mt-20">
+                <img src="assets/Rectangle.png" alt="" height="400px" width="350px">
+                <div>
+                  <h1 class="text-3xl font-bold text-black">We design thoughtful,<br>liveable spaces</h1>
+                  <p class="py-4 text-gray-500 font-sm">
+                      The word design refers to something that is or has been<br>created a thinking agent, and is of something its design.
+                  </p>
+                  <div>
+                    <div class="flex gap-4 bg-white shadow-xl  w-full p-3 rounded-xl mb-5">
+                      <img src="assets/commercial.png" alt="">
+                      <div>
+                        <h4 class="text-[#494949] font-bold text-lg">Commercial</h4>
+                        <p class="text-gray-600 text-sm">Commercial means involving or relating to the buying<br>and selling of goods.</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-4 bg-white shadow-xl  w-full p-3 rounded-xl">
+                      <img src="assets/residential.png" alt="">
+                      <div>
+                        <h4 class="text-[#494949] font-bold text-lg">Residential</h4>
+                      <p class="text-gray-600 text-sm">Residential is an adjective that expresses a relationship <br>with homes, place where people live.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div></section>
+
+        <!-- Our Works Process -->
+        <!-- <div class="hero bg-stone-200 ">
+          <div class="hero-content text-center">
+            <div>
+              <div>
+                <button class="flex items-center gap-1 bg-white p-2 w-36 rounded-lg ml-40 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>            
+                How we works</button></div>
+              <h1 class="text-4xl font-bold">Our Works Process</h1>
+              <p class="py-6">
+                A working process is a set of steps that employees company's goals, such as efficiency, effectiveness, and satisfaction.
+              </p>
+
+              <div class="grid grid-flow-row gap-4 sm:grid sm:grid-flow-col">
+                <div class="bg-[#E7C1D3] p-3 rounded-xl h-4/6 w-5/6">
+                  <img src="assets/concept.png" alt="" class="ml-3 mb-3">
+                    <p class="text-xl font-semibold text-black mr-80">Concept</p>
+                  <p class="text-sm font-medium text-gray-500 ">Some common synonyms of concept.</p>
+                </div>
+                <div class="bg-[#E7C1D3] p-3 rounded-xl h-4/6 w-5/6">
+                  <img src="assets/flow-chart.png" alt="" class="ml-3 mb-3">
+                    <p class="text-xl font-semibold text-black mr-64">Design Process</p>
+                  <p class="text-sm font-medium text-gray-500 mr-32">In linguistic terms,basic concepts are the.</p>
+                </div>
+                <div class="bg-[#E7C1D3] p-3 rounded-xl h-4/6 w-5/6">
+                  <img src="assets/vision.png" alt="" class="ml-4 mb-3">
+                    <p class="text-xl font-semibold text-black mr-72">Supervision</p>
+                  <p class="text-sm font-medium text-gray-500 mr-48">They are the words that describe.</p>
+                </div>
+                <div class="bg-[#E7C1D3] p-3 rounded-xl h-4/6 w-5/6">
+                  <img src="assets/budget-planning.png" alt="" class="ml-3 mb-3">
+                    <p class="text-xl font-semibold text-black mr-64">Budget Plannig</p>
+                  <p class="text-sm font-medium text-gray-500 mr-48"> A similar term is 'big' concepts.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div> -->
+      <section><div class="bg-gray-100 mx-20 my-10 p-10">
+        <div class="ml-64">
+          <button class="flex items-center gap-1 bg-white p-2 w-36 rounded-lg ml-40 mb-6 font-semibold text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg>            
+          How we works</button></div>
+          <p class="text-4xl font-bold text-center text-black mb-4">Our Works Process</p>
+          <p class="text-base font-medium text-center text-gray-500 mb-9">A working process is a set of steps that employees company's<br>goals,such as efficiency,effectiveness and satisfaction.</p>
+          <div class="lg:grid lg:grid-flow-col sm:grid sm:grid-flow-row gap-3 sm:gap-y-3">
+            <div class="bg-[#E7C1D3] p-3 rounded-xl">
+              <img src="assets/concept.png" alt="">
+              <h4 class="text-xl font-semibold text-black mb-2 mt-2">Concept</h4>
+              <p class="text-sm font-medium text-gray-600">A concept is an abstract idea that serves as a for more concrete principles,thoughts.</p>
+            </div>
+            <div class="bg-[#EFDA6E] p-3 rounded-xl">
+              <img src="assets/flow-chart.png" alt="">
+              <h4 class="text-xl font-semibold text-black mb-2 mt-2">Design Process</h4>
+              <p class="text-sm font-medium text-gray-600">A concept is an abstract idea that serves as a for more concrete principles,thoughts.</p>
+            </div>
+            <div class="bg-[#A4DAC3] p-3 rounded-xl">
+              <img src="assets/vision.png" alt="">
+              <h4 class="text-xl font-semibold text-black mb-2 mt-2">Supervision</h4>
+              <p class="text-sm font-medium text-gray-600">A concept is an abstract idea that serves as a for more concrete principles,thoughts.</p>
+            </div>
+            <div class="bg-[#77AAEA] p-3 rounded-xl">
+              <img src="assets/budget-planning.png" alt="">
+              <h4 class="text-xl font-semibold text-black mb-2 mt-2">Budget Planning</h4>
+              <p class="text-sm font-medium text-gray-600">A concept is an abstract idea that serves as a for more concrete principles,thoughts.</p>
+            </div>
+          </div>
+      </div></section>
+
+      <!-- Let’s Discuss Next Project -->
+       <section class="bg">
+        <button class="flex items-center gap-1 bg-[#c3f58a] p-2 w-36 rounded-3xl ml-96 mb-6 font-medium text-gray-800 text-base">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg>            
+          Let's Connect</button></div>
+          <h1 class="text-4xl font-bold text-black text-center mt-6 mb-3">Let’s Discuss Next Project</h1>
+          <p class="text-base font-medium text-gray-600 text-center">New Project is a Project that has not achieved Commercial Operation on or<br>prior to the Execution Date.</p>
+      <div class="ml-80">
+        <div class="lg:grid lg:grid-cols-2 lg:w-fit lg:gap-2 sm:grid sm:grid-flow-row sm:gap-y-5">
+          <input type="text" placeholder="First Name*" class="text-sm font-medium text-gray-500 py-3 pl-5 pr-20 rounded-3xl">
+          <input type="text" placeholder="Last Name*" class="text-sm font-medium text-gray-500 py-3 pl-5 pr-20 rounded-3xl">
+          <input type="text" placeholder="Phone Number*" class="text-sm font-medium text-gray-500 py-3 pl-5 pr-20 rounded-3xl">
+          <input type="text" placeholder="Email Number*" class="text-sm font-medium text-gray-500 py-3 pl-5 pr-20 rounded-3xl">
+        </div>
+        <div>
+          <input type="text" name="" id="" placeholder="Write your message here" class="text-sm font-medium text-gray-500 pt-3 pb-48 pl-12 pr-80 rounded-3xl mt-3">
+        </div>
+      </div>
+      <a class="btn bg-[#ABEF5F] px-7 rounded-3xl text-black font-extrabold text-base flex">Send Mail
+        <div class="border-4 border-black bg-black text-white rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-3"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></svg></div></a>
+       </section>
+      </main>
+    <footer>
+      <footer class="footer footer-center bg-black text-base-content rounded p-10">
+        <!-- <div class="border-4 border-[#ABEF5F] bg-[#ABEF5F] rounded-full flex">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></svg></div>                  
+        <h2 class="font-bold text-2xl text-black ml-2">Rinterio</h2>
+      </div> -->
+      <div class="flex mt-10">
+        <div class="border-4 border-[#ABEF5F] bg-[#ABEF5F] rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+        </svg></div>
+        <h2 class="font-bold text-2xl text-white">Rinterio</h2>
+      </div>
+      <p class="text-sm text-gray-400">A footer is a section at the bottom of a page or document that provides<br>additional information,navigation links,and other details.</p>
+        <nav class="gap-16 sm:grid sm:grid-cols-1 sm:gap-y-2 lg:flex">
+          <a class="link link-hover text-gray-200">Home</a>
+          <a class="link link-hover text-gray-200">Services</a>
+          <a class="link link-hover text-gray-200">Portfolio</a>
+          <a class="link link-hover text-gray-200">Blogs</a>
+          <a class="link link-hover text-gray-200">Contact us</a>
+        </nav>
+        <!-- <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+              </svg>
+            </a>
+          </div>
+        </nav> -->
+      
+        <a class="btn bg-[#ABEF5F] px-4 rounded-3xl text-black font-bold flex lg:w-1/6 sm:w-full">Book Consult
+          <div class="border-4 border-black bg-black text-white rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-3"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></svg></div></a>
+      </footer>
+    </footer>
+</body>
+
+</html>
